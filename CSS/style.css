@@ -1,0 +1,93 @@
+/*element*/
+h1{
+    color:rgb(186, 223, 25);
+}
+/*id selector*/
+#ss{
+    color:brown;
+    font-size: 50px;
+}/*class*/
+.fit{
+    color:deeppink;
+}
+/*universal selectors --all elemnts par lag jata hai*/
+*{
+    text-align: center;
+    
+    
+}
+/*attiribute*/
+input[type="text"]{
+    color: bisque;
+    background-color: blueviolet;
+}
+/*descendantan-it can jump any level */
+div p{
+}
+/*child  like (div>p>span)can jump only one level
+combination of child and desc as  (body div>p>span) */
+/*adjacent selectors  is written with help of + 
+general slectors-- ~ ye sign use hota hai isme*/
+h1+p{} /*isme just adjacent wala hi lega*/
+h1~p{} /*isme aage k aage wala bhi le skta hai*/
+/*pseudo class(:)
+two types of state-
+resting,transitional
+1-hover
+2-focus  use tab button to see the */
+input:focus{
+    background-color: brown;
+}
+/*click krke rkhe rhna is active for active state*/
+a:active{
+    color:darkolivegreen;
+}
+a:visited{
+    color:yellow;
+}
+:nth-of-type() --read by urself
+/*pseudo elements*/
+h1::first-line{
+    font-size: 20px;
+}
+h4::after{
+    content:"coding blocks";
+}
+h4::before{
+    content:"coding blocks";
+}
+h1::first-letter{
+    font-size: 100px;
+}
+/*colours types rgb,rgba,hexadecimal
+total number of colour combination is 256*256*256 
+  rgb(0-255,0-255,0-255)   
+  rgba a stands for alpha channel  from (0-1) 
+  hexadecimal - isme 8 values daal skte hain pr agr six daalo to yhn last k do column mai ff hota hai aur ye alpha channel hota hai aur har do values red blue and green k liye hoti hai 
+   INHERITANCE
+    inheritance is a property  which is shown by some properties parent to child */
+
+ul>li{
+    color:blueviolet;
+    font-size: 2em;
+    
+    
+}
+/*units -two types
+1-absolute 
+2-relative--%,rem,em,vh,vw,px
+ 1- % is dependent on the immediate parent..like width is 100%
+ 2-em means times of parent like 2em means two times odf parent.
+ 3-rem means root ka times so root hota hai html and html ka by default 16px hota hai 2rem 32 px ho jayega
+ BOX MODEL
+ we basically have 4-5 things in this 
+ margin -- two elements k beech mai jagah
+ padding-- content se pehel wala space pr element mai count hota hai
+ border-- it is also counted in the elements
+ height & width
+ 
+
+
+
+
+

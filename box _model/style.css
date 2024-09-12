@@ -1,0 +1,28 @@
+*{
+    box-sizing: content-box;
+    margin:0;
+    padding:0;
+}
+/*border-box main padding and border adjust hota hai ,contenet mai nahi hota and element exppand ho jata hai
+margin element k area pr koi farak nhi daalta hai 
+box model ki saari properties block elements pr milti hain inline pe nhi mlti*/
+div{
+   /* display: inline-block;*/
+    background-color: aqua;
+    height:100px;
+    width:100px;
+    padding:10px;
+    border:5px solid black;
+    margin:10px;
+}
+span{
+    display: inline-block;  /*ye inline to rhega hi and block isliye taaki box model ki properties ko access kr paaye */
+   /* display: none;isme nazara nhi aata and na hi jagah leta pr visibility:hidden mai jagah leta hai aur dikhta nhi hai;*/
+    visibility: hidden;
+    background-color: aqua;
+    height:100px;
+    width:100px;
+    padding:10px;
+    border:5px solid black;
+    margin:10px;
+}
